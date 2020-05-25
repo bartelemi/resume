@@ -3,7 +3,6 @@
 
 \LoadClass{article}
 
-
 \RequirePackage{multicol}
 \RequirePackage{titlesec}
 \RequirePackage{graphicx}
@@ -23,10 +22,7 @@
 % Commands
 
 \newcommand{\labelwithimage}[2]{%
-	\begin{center}
-		\includegraphics[height=1em]{#1}
-		#2
-	\end{center}
+	\includegraphics[height=1em]{#1} #2
 }
 
 
@@ -40,22 +36,4 @@
 
 \newcommand{\name}[1]{%
 	\centerline{\Huge{#1}}
-}
-
-\newcommand{\workitems}[3]{%
-	\begin{itemize}
-		\item #1
-		\item #2
-		\item #3
-	\end{itemize}%
-}
-
-% TODO: Personalize this
-\newcommand\contact[5]{%
-	\centerline{%
-		\makebox[0pt][c]{%
-			#1 {\large\textperiodcentered} #2 {\large\textperiodcentered} #3
-			\ #4 \ \ #5%
-		}%
-	}%
 }

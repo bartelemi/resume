@@ -2,6 +2,7 @@
 
 \pagenumbering{gobble}
 
+\usepackage{enumerate}
 \usepackage[%
     a4paper,%
 	left=0.5in,%
@@ -16,22 +17,27 @@
 
 	\name{Bartłomiej Szostek}
 
-	\labelwithimage{../assets/phone.png}{+44 (0)7565224959}
-	\labelwithimage{../assets/email.png}{szostek.bartek@gmail.com}
-	\labelwithimage{../assets/linkedin.png}{linkedin.com/in/bartlomiej-szostek/}
-	\labelwithimage{../assets/github.png}{github.com/bartelemii/}
+	\begin{center}
+		\labelwithimage{../assets/phone.png}{+44 (0)7565224959}
+		\labelwithimage{../assets/email.png}{szostek.bartek@gmail.com}
+		
+		\labelwithimage{../assets/linkedin.png}{linkedin.com/in/bartlomiej-szostek/}
+		
+		\labelwithimage{../assets/github.png}{github.com/bartelemii/}
+	\end{center}
 	
 	\section{Personal Statement}
 		A challenge driven and innovative programmer, interested in overall computer
 		science and software design. Exhibits strong analytical abilities and logical
 		thinking reinforced by academic and work experience. Instinctive team worker,
-		with creative ideas supported by technical knowledge. Software developer with
-		five years’ experience, gained in one of the biggest Polish IT\&T companies.
+		with creative ideas supported by technical knowledge.
 
 	\section{Key Achievements}
-		Awarded 14,000 GBP scholarship to Cranfield University in 2016/17 for Computational and Software Techniques in Engineering.
-		Awarded 34,500 PLN scholarship for participation in project ZIP at Silesian University of Technology, Poland in years 2012-2016. Scholarship granted in recognition of academic achievements.
-		Design and development of ONKO-SYS, one of largest national IT systems for genetic/proteomic scientists using modern tools and frameworks under the WASKO S.A. company.
+		\begin{enumerate}[i]
+			\item Core developer at Limejump in a project, that allowed aggregated energy assets to participate in UK Balancing Mechanism. That product became one of the most competitive in the market and received great media coverage.
+			\item Participated in development of ONKO-SYS, one of largest Polish IT systems for genetic/proteomic scientists using modern tools and frameworks under the WASKO S.A. company.
+			\item Awarded 14,000 GBP scholarship to Cranfield University in 2016/17 for Computational and Software Techniques in Engineering and another scholarship for recognition of academic achievements at Silesian University of Technology, Poland in years 2012-2016.
+		\end{enumerate}
 
 	\section{Career}
 		\datedsubsection{
@@ -42,6 +48,7 @@
 			\item Along with team of data scientist, designed and deployed a machine learning platform to streamline training and serving models, that replaced legacy forecasting system.
 			\item Assisted in service migration from ECS to k8s using state of the art gitops best practices; helped define our cloud infrastructure in terraform.
 			\item Participated in establishing a recruitment process for engineers.
+			\item Assessed options to optimise and split legacy PostgreSQL database to that lead to significant savings for company.
 		\end{itemize}
 
 		\datedsubsection{
@@ -51,10 +58,11 @@
 		
 		\begin{itemize}
 			\item Developed a first in the industry system that allowed automatic participation of aggregated energy assets in the National Grid Balancing Mechanism.
+			\item Built and scalable platform in micro-services architecture with Python (Django and Flask) and golang, running fully on AWS cloud.
 			\item Created RESTful APIs using OpenAPI specification both for internal and external consumption.
-			\item Designed, build and deployed Python (Django and Flask) and golang microservices to AWS cloud.
 			\item Worked side by side with stakeholders to understand the energy domain in depth, identify business needs and propose solutions.
-			\item Build development pipeline with CircleCI: build, test, cover and deploy projects with automatic database migration.
+			\item Integrated Prometheus with existing services and build Grafana dashboards to monitor  platform and infrastructure.
+			\item Utilised CircleCI tooling to build CI/CD pipeline to minimise human factor: build, test, cover and deploy projects with automatic database migration.
 		\end{itemize}
 				
 		\datedsubsection{
@@ -64,7 +72,6 @@
 		\begin{itemize}
 			\item Contributed to projects to integrate Mosaic software with hardware vendors’ APIs utilising WCF Web Services. Wrote simulator-like software to imitate behaviour of 3rd party hardware.
 			\item Coded desktop applications using C\#, WinForms, WPF and WiX tools as well as Oracle and SQLite databases within a Scrum team.
-			\item Supported the build pipeline and improved development processes as a member of internal Process Improvement Group. This included configuration of Team City servers, overseeing builds and enhancements in TFS integration.
 			\item Designed, programmed, maintained, and tested software applications in line with defined application specifications, development plans and strict internal coding standards.
 		\end{itemize}
 		
@@ -76,7 +83,6 @@
 			\item Coded web app using React.js for frontend and C\# for back-end within 3 – 20 people teams.
 			\item Designed and created custom websites and CMS, meeting requirements of WCAG 2.0 technical standards, for hospitals, like Centre of Oncology in Gliwice and Orlowski Hospital in Warsaw.
 			\item Maintained and updated Microsoft SQL databases for company’s client; created MSSQL and PLSQL queries for testing and validations for two web applications.
-			\item Analysed trending ECMAScript 6 as well as CSS3 and related frameworks for web user interfaces; structured architecture for front-end layer with React, as well as jQuery and Bootstrap libraries.
 			\item Designed and built prototype of cross-platform mobile application for physicians, visualising patients’ data, using Ionic and Angular open-source frameworks.
 		\end{itemize}
 	
@@ -86,24 +92,23 @@
 			MSc in Computational \& Software Techniques in Engineering (Double Diploma), Cranfield University, Cranfield, UK
 			(First Class Honours)
 		}{Sep 2016 – Sep 2017}
-			Modules included: C++, Computational Methods, Requirement Analysis and System Design, Small Scale Parallel Programming (CUDA and OpenMP), Management for Technology.
-			Individual Thesis: Optimised simulation of reduced aeroelastic systems:
-			Project aimed to redesign a CA2LM framework able to simulate in approximation a flexible aircraft model of reduced complexity. Tool is strongly utilised by researchers at Cranfield University. Task required to explore scope for improvements in simulation run-times and design new engineering interfaces to improve learning curve of the framework. Final results yielded 62\% speed improvements, new user-friendly interface and modular, maintainable software, while preserving existing framework capabilities.
+			Modules: C++, Computational Methods, Requirement Analysis and System Design, Small Scale Parallel Programming, Management for Technology.
+			Thesis: \emph{Optimised simulation of reduced aeroelastic systems}.
+			Project aimed to redesign a CA2LM framework able to simulate in approximation a flexible aircraft model of reduced complexity. This tool was strongly utilised by researchers at Cranfield University. Task required to explore scope for improvements in simulation run-times and design new engineering interfaces to improve learning curve of the framework. Final results yielded 62\% speed improvements, new user-friendly interface and modular, maintainable software, while preserving existing framework capabilities.
 
 		\datedsubsection{
 			MSc in Informatics (Double Diploma): Silesian University of Technology, Gliwice, Poland
 			(V. good with distinction)
 		}{Mar 2016 – Sep 2017}
-			Modules included: Algorithms and Data Structures, Analysis and Design of Information Systems, Performance Evaluation of Computer Networks/Computer Systems, Software Development in a Changing Business Environment, Computer Vision and Image Recognition (MATLAB), Introduction to Compilers.
+			Modules: Algorithms and Data Structures, Performance Evaluation of Computer Networks and Systems, Software Development in a Changing Business Environment, Computer Vision and Image Recognition, Compilers.
 
 		\datedsubsection{
 			BSc in Informatics: Silesian University of Technology, Gliwice, Poland
 			(V. good)
 		}{Oct 2012 – Jan 2016}
-			Modules included: Programming in C/C++, Calculus and Linear Algebra, Digital Systems Arithmetic, Assembler, Statistical Methods, Discrete Mathematics, Algorithms and Data Structures, Databases,
-			Operating Systems (Windows and Linux administration), Concurrent Computing (ADA), Computer Architecture (CUDA, JavaSpaces, PVM), Java, Computer System Interface, Networking, Rule-based AI Systems.
-			Individual Thesis: System for smart metering of household services using Bluetooth radio:
-			Verification of possibilities to implement remote meter reading for various media in a household, based on the Bluetooth 4.0 LE standard. Modelling mesh communication system based on Texas Instruments CC2640 toolkit, for gathering real time data from meters and provide information to central system.
+			Modules: Programming in C/C++, Calculus, Linear Algebra, Digital Systems Arithmetic, Assembler, Statistical Methods, Discrete Mathematics, Algorithms and Data Structures, Databases, Operating Systems, Concurrent Computing (ADA), Computer Architecture (CUDA, JavaSpaces, PVM), Java, Networking, Rule-based AI Systems.
+			Thesis: \emph{System for smart metering of household services using Bluetooth radio}.
+			Verification of possibilities to implement remote meter reading for various media in a household, based on the Bluetooth 4.0 LE standard.
 
 	\section{Skills, Interests \& Extracurricular Activities}
 		Spoken languages: Native Polish, fluent English, and basic conversational French.
