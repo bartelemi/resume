@@ -9,10 +9,10 @@
 
 
 \titleformat{\section}
-	{\Large\scshape\raggedright} % Make the \section headers large (\Large),
-	{}{0em}                      % Can be used to give a prefix to all sections, like 'Section ...'
-	{}                           % Can be used to insert code before the heading
-	[\titlerule]                 % Inserts a horizontal line after the heading
+	{\Large\scshape\raggedright}
+	{}{0em}
+	{}
+	[\titlerule]
 
 \titleformat{\subsection}
 	{\large\scshape\raggedright}
@@ -25,13 +25,12 @@
 	\includegraphics[height=1em]{#1} #2
 }
 
-
 \newcommand{\datedsection}[2]{%
-	\section[#1]{#1 \hfill #2}%
+	\section{#1 \hfill #2}%
 }
 
 \newcommand{\datedsubsection}[2]{%
-	\subsection[#1]{#1 \hfill #2}%
+	\subsection{#1 \hfill #2}%
 }
 
 \newcommand{\name}[1]{%
